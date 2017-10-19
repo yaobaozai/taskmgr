@@ -1,5 +1,6 @@
 import { NgModule, SkipSelf, Optional } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpModule } from '@angular/http';
 import { MdIconRegistry } from "@angular/material";
 import { DomSanitizer } from "@angular/platform-browser";
 import { MdToolbarModule, MdIconModule, MdButtonModule } from '@angular/material';
@@ -13,7 +14,8 @@ import { loadSvgResources } from '../utils/svg.util';
     CommonModule,
     MdToolbarModule,
     MdIconModule,
-    MdButtonModule
+    MdButtonModule,
+    HttpModule
   ],
   declarations: [HeaderComponent,
      SidebarComponent,
