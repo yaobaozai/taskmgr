@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
 import { OverlayContainer } from '@angular/material';
-import { trigger, state, transition, style } from "@angular/animations";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  animations: [
-    trigger('square', [state('green', style({'background-color': 'green'}))])
-  ]
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   
@@ -25,8 +21,4 @@ export class AppComponent {
 
   }
   
-  onClick() {
-    this.squareState = this.squareState ? null : 'green';
-  }
-
 }
