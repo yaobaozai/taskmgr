@@ -8,13 +8,15 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { loadSvgResources } from '../utils/svg.util';
+import { AppRoutingModule } from '../app-routing.module';
 import 'hammerjs';
 
 @NgModule({
   imports: [
     HttpModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule,
   ],
   declarations: [
      HeaderComponent,
@@ -24,7 +26,8 @@ import 'hammerjs';
   exports: [
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    AppRoutingModule,
   ]
 })
 export class CoreModule {
