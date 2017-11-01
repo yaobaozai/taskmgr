@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { loadSvgResources } from '../utils/svg.util';
 import { AppRoutingModule } from '../app-routing.module';
 import 'hammerjs';
+import 'rxjs/add/operator/take';
 
 @NgModule({
   imports: [
