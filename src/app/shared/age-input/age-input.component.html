@@ -1,0 +1,22 @@
+<div [formGroup]="form" class="age-input">
+  <div>
+    <md-input-container>
+      <input type="text" mdInput formControlName="birthday" [mdDatePicker]="birthPicker" placeholder="出生日期">
+      <button mdSuffix [mdDatepickerToggle]="birthPicker" type="button"></button>
+      <md-error>日期不正确</md-error>
+    </md-input-container>
+    <md-datepicker touchUi="true" #birthPicker></md-datepicker>
+  </div>
+  <ng-container>
+    <div class="age-num">
+      <md-input-container>
+        <input type="text">
+      </md-input-container>
+    </div>
+    <div>
+      <md-button-toggle-group>
+        <md-button-toggle></md-button-toggle>
+      </md-button-toggle-group>
+    </div>
+  </ng-container>   
+</div>
