@@ -74,7 +74,8 @@ import { AgeInputComponent } from './age-input/age-input.component';
     MdSelectModule,
     MdSidenavModule,
     DirectiveModule,
-    ImageListSelectComponent
+    ImageListSelectComponent,
+    AgeInputComponent
   ],
   entryComponents: [ConfirmDialogComponent],
   declarations: [

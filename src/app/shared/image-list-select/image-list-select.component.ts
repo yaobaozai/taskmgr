@@ -10,10 +10,15 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR, NG_VALIDATORS, FormControl } f
       provide: NG_VALUE_ACCESSOR,
       useExisting: forwardRef(() => ImageListSelectComponent),
       multi: true
+    },
+    {
+      provide: NG_VALIDATORS,
+      useExisting: forwardRef(() => ImageListSelectComponent),
+      multi: true
     }
   ]
 })
-export class ImageListSelectComponent implements OnInit {
+export class ImageListSelectComponent implements ControlValueAccessor {
   @Input() title = '选择';
   @Input() cols = 6;
   @Input() rowHeight = '64px';
